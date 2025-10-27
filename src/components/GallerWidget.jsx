@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import Vector from '../assets/Vector.png'
 import Rectangle from '../assets/rectangle.png'
-
+import Image from "../assets/finalimage.png"
 // Sample data for the images (increased count to demonstrate scrolling)
 const sampleImages = [
   'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=200&auto=format&q=75',
@@ -127,7 +127,7 @@ function GalleryWidget() {
                         }`}
                     >
                         <img
-                            src={img}
+                            src={Image}
                             alt={`Gallery ${id + 1}`}
                             className={`w-full h-full object-cover rounded-2xl transition-all duration-300 ${
                                 hoveredImage === id ? 'grayscale-0 brightness-100' : 'grayscale brightness-75'
