@@ -19,7 +19,7 @@ function AboutMeWidget() {
 
   return (
     <div
-      className=" h-[300px]
+      className=" h-[270px]
     p-6 rounded-xl backdrop-blur-sm
     bg-gray-600/60 shadow-2xl
     
@@ -54,7 +54,7 @@ function AboutMeWidget() {
       {/* Note: The content itself also seems to sit on a slight, darker background layer */}
       <div className="flex justify-between gap-3">
         <img src={Image2} alt="" className="h-[30px] mt-15" />
-        <div className="p-4 rounded-lg">
+        <div className="p-4 rounded-lg h-[180px]">
         {activeTab && (
           <div className="">
             <p className="text-[rgba(150,150,150,1)] text-md">
@@ -62,7 +62,7 @@ function AboutMeWidget() {
               been working at this awesome company for 3 years now.
             </p>
             <br />
-            <p className="text-[rgba(150,150,150,1)] text-md">
+            <p className="text-[rgba(150,150,150,1)] text-md overflow-hidden">
               I was born and raised in Albany, NY & have been living in
               Santa Carla for the past 10 years my wife Tiffany and
               my 4 year old twin daughters- Emma and Ella. Both of them
@@ -74,6 +74,8 @@ function AboutMeWidget() {
           </div>
           
         )}
+
+
 
         </div>
         <img src={Image3} alt="" className="h-[70px] mt-7" />
